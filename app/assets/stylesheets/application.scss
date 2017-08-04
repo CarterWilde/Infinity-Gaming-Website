@@ -1,16 +1,82 @@
 @import "bootstrap";
+$hamburger-layer-color: #5CB85C !default;
+@import "hamburgers";
+/*
+ * Application custom styles
+ */
 
 .carousel {
   height: 500px;
   margin-bottom: 60px;
   background-color:#29364C;
-  /*This is to just make sure most of the template works 
-    because the carousel doesn't have data. Not fully sure 
-    how to add data looks like javascript*/
+  /*
+    This is to just make sure most of the template works
+    because the carousel doesn't have data. Not fully sure
+    how to add data looks like javascript.
+  */
 }
 
-// #myCarousel {
-//   background-image: url("https://static.pexels.com/photos/33109/fall-autumn-red-season.jpg");
-//     background-repeat: no-repeat;
-//     background-position: center;
-// }
+/*
+ *End of application custom styles
+ */
+
+/*
+ * Application navigation custom styles
+ */
+
+.form-inline {
+  float: right;
+}
+
+a {
+  font-family: 'Raleway', sans-serif, serif;
+}
+
+a:hover {
+  color: white;
+}
+
+.navbar-collapse {
+  margin-left: 270px;
+}
+
+.search-con{
+  width:100%;
+}
+
+.carousel .slide{
+  clear:both;
+}
+
+/*
+ *End of application navigation custom styles
+ */
+
+/*
+ *Application footer custom styles
+ */
+
+footer {
+  text-align: center;
+  font-weight: bold;
+}
+
+.bold-footer {
+  color: red;
+}
+
+button.hamburger.hamburger--spin{
+  display: none;
+  float: right;
+}
+
+@media only screen and (max-width: 991px) {
+    button.hamburger.hamburger--spin{
+        display: inline;
+        float: left;
+    }
+}
+
+/*
+ *End of application footer custom styles
+ */

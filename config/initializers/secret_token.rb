@@ -1,0 +1,1 @@
+TeamApp::Application.config.secret_key_base = '65d7a8bdd51e63e405d943cb852ac21dc5dc4356168e0a4bce52f8ae1f8cc48520cabfcb22f336d50f97905b5d482e3031a6752188ee15399d2a5f546cfd05fd'

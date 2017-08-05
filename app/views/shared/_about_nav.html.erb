@@ -1,0 +1,45 @@
+<div class="nav-bar-con" data-toggle="open" id="navbarCollapse">
+  <div class="nav-bar-content" data-toggle="open" id="navbarCollapse">
+    <div class="nav-bar-header">
+      <form class="nav-bar-header-con">
+        <button class="search-button" type="submit">SEARCH</button>
+        <input class="search-box" type="text" placeholder="SEARCH">
+      </form>
+    </div>
+    <div class="nav-bar-links-con">
+      <a class="nav-bar-links" href="<%= root_path %>"><p>HOME</p></a>
+    </div>
+    <div class="nav-bar-links-con">
+      <a class="nav-bar-links" href="<%= about_path %>"><p>ABOUT</p></a>
+    </div>
+    <div class="nav-bar-links-con">
+      <a class="nav-bar-links" href="<%= contact_path %>"><p>CONTACT</p></a>
+    </div>
+    <div class="nav-bar-links-con">
+      <a class="nav-bar-links" href="<%= images_path %>"><p>IMAGES</p></a>
+    </div>
+    <div class="nav-bar-links-con">
+      <a class="nav-bar-links" href="<%= videos_path %>"><p>VIDEOS</p></a>
+    </div>
+  </div>
+  <div class="nav-bar-ham">
+    <button class="hamburger hamburger--spin no-outline" type="button" data-toggle="is-active" data-target="#navbarCollapse">
+      <a data-toggle="open" data-target="#navbarCollapse">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </a>
+    </button>
+    <script>
+      var $hamburger = $(".hamburger");
+      var $nav = $(".nav-bar-con");
+      var $navCon = $(".nav-bar-content");
+      $hamburger.on("click", function(e) {
+        $hamburger.toggleClass("is-active");
+        $nav.toggleClass("open");
+        $navCon.toggleClass("open");
+          // Do something else, like open/close menu
+      });
+    </script>
+  </div>
+</div>

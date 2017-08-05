@@ -1,3 +1,11 @@
+@import "bootstrap";
+$hamburger-layer-color: #5CB85C !default;
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import "hamburgers";
+@import "application-nav";
+html{
+  background-color: #29364C;
+}
 .header-con{
   z-index: -10;
   background-image: url("dummypicture.png");
@@ -14,10 +22,10 @@
 .overlay{
   display:block;
   background-color: #444;
+  margin-top:-5.5%;
   height: 6em;
-  width: 20%;
-  margin-top: -5.7%;
-  margin-left: 40%;
+  width: 100%;
+  z-index: -2000;
   mix-blend-mode:overlay;
 }
 .header-text-con h1{

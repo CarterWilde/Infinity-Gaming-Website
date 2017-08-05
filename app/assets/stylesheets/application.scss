@@ -1,14 +1,19 @@
 @import "bootstrap";
 $hamburger-layer-color: #5CB85C !default;
+@import url('https://fonts.googleapis.com/css?family=Lato');
 @import "hamburgers";
+@import "application-nav";
 /*
  * Application custom styles
  */
+$black:#292B2C;
+$green:#5CB85C;
+$blue:#29364C;
 
 .carousel {
   height: 500px;
   margin-bottom: 60px;
-  background-color:#29364C;
+  background-color:$blue;
   /*
     This is to just make sure most of the template works
     because the carousel doesn't have data. Not fully sure
@@ -37,7 +42,9 @@ a:hover {
 }
 
 .navbar-collapse {
-  margin-left: 270px;
+  position: relative;
+  left: 33%;
+  // margin-left: 270px;
 }
 
 .search-con{
@@ -65,19 +72,37 @@ footer {
   color: red;
 }
 
-button.hamburger.hamburger--spin{
-  display: none;
-  outline: 0px;
-  float: right;
+/*
+ *hamburger Styles
+ */
+
+button.hamburger.hamburger--spin.hamburger-button{
+  display:none;
 }
 
 @media only screen and (max-width: 991px) {
-    button.hamburger.hamburger--spin{
+    button.hamburger.hamburger--spin.hamburger-button{
         display: inline;
-        float: left;
+        outline:0px;
+        float:right;
     }
 }
 
 /*
  *End of application footer custom styles
+ */
+
+/*
+  * Image page styling
+  */
+
+.header-centering {
+  position: relative;
+  left: 25%;
+  margin-bottom: 20px;
+}
+
+
+/*
+ * End of image page styling
  */

@@ -1,1 +1,15 @@
-<%= render 'shared/application_nav' %>
+<%= stylesheet_link_tag'pages', media: 'all', 'data-turbolinks-track': 'reload' %>
+<%= render 'shared/about_nav' %>
+<div class="pages-content">
+  <div class="header-con">
+    <div class="header-text-con">
+      <h1>Games</h1>
+      <div class="overlay"></div>
+    </div>
+  </div>
+  <div class="games-con">
+    <% 8.times do %>
+      <%= render 'shared/game' %>
+    <% end %>
+  </div>
+</div>

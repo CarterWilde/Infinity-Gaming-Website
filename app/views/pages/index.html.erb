@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  
+  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => "reload" %>
   <body>
+    
+    <!-- Application navigation partial located in shared/_application_nav.html.erb file -->
+    
     <%= render 'shared/application_nav' %>
+    
+    <!-- Application content partial located in shared/_application_content.html.erb file -->
+    
     <%= render 'shared/application_content' %>
+    
   </body>
   
 </html>

@@ -1,0 +1,38 @@
+<%= stylesheet_link_tag'pages', media: 'all', 'data-turbolinks-track': 'reload' %>
+<%= render 'shared/application_nav_second' %>
+<div class="pages-content">
+  <div class="header-con">
+    <div class="header-text-con" id="f">
+      <h1>
+        <span class="overlay">Games</span>
+        <script>
+        var windw = this;
+        $.fn.followTo = function ( pos ) {
+            var $this = this,
+                $window = $(windw);
+
+            $window.scroll(function(e){
+                if ($window.scrollTop() > pos) {
+                    $this.css({
+                        position: 'absolute',
+                        top: pos
+                    });
+                } else {
+                    $this.css({
+                        position: 'fixed',
+                        top: 0
+                    });
+                }
+            });
+        };
+        $('#f').followTo(900);
+        </script>
+      </h1>
+    </div>
+  </div>
+  <div class="games-con">
+    <% 8.times do %>
+      <%= render 'shared/game' %>
+    <% end %>
+  </div>
+</div>

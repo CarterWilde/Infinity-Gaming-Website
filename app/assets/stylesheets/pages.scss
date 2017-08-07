@@ -1,0 +1,41 @@
+@import "application-nav";
+$black:#292B2C;
+$green:#5CB85C;
+$blue:#29364C;
+
+.pages-content{
+
+   background-color:#29364C;
+   float:right;
+   width:96.39%;
+} 
+
+.about-us-header {
+   position: relative;
+   text-align: center;
+}
+
+.about-header-div{
+   width: 50%;
+   margin: 0 auto;
+   text-align: center;
+   font-family: Georgia, sans-serif, serif;
+}
+
+.about-header {
+   padding: 0;
+   margin: 0;
+   border: 0;
+   color: $green;
+}
+
+.developers {
+   position: relative;
+   margin-left: 400px;
+   width: 500px;
+}
+
+.first-image, .second-image, .third-image {
+   margin-bottom: 100px;
+   width: 50%;
+}
